@@ -152,4 +152,31 @@ my_deep_copied_list.append(5)
 print(my_deep_copied_list)#[1, 2, 3, 4, 5]
 print(my_list)#[1, 2, 3, 4]
 
+# tehre exists in the copy module a function called copy()
+# which performs a deep copy AT ONE LEVEL of recursion only
+# you need deepcopy() to deep copy recursively
+
+my_recursive_list = [1,2,3,[4,5,6]]
+my_recursive_list_copy = my_recursive_list
+# we know this copy-by-reference will NOT work at any level
+my_recursive_list_copy[0] = 0
+my_recursive_list_copy[3].append(7)
+print(my_recursive_list)#[0, 2, 3, [4, 5, 6, 7]]
+# reset:
+my_recursive_list = [1,2,3,[4,5,6]]
+my_recursive_list_deepcopy = copy.deepcopy(my_recursive_list)
+my_recursive_list_deepcopy[0] = 0
+my_recursive_list_deepcopy[3].append(7)
+print(my_recursive_list)#[1, 2, 3, [4, 5, 6]] unchanged
+# my_deep_copied_recursive_list = 
+# reset:
+my_recursive_list = [1,2,3,[4,5,6]]
+my_recursive_list_shallowcopy = copy.copy(my_recursive_list)
+my_recursive_list_shallowcopy[0] = 0#hasn't worked
+my_recursive_list_shallowcopy[3].append(7)#has worked - refrence within a reference
+print(my_recursive_list)#[1, 2, 3, [4, 5, 6, 7]]
+# as we can see, the copy.copy() function does not solve the pron=blem of making immutable copies
+# imagine deeply nested data such as JSON
+
+
 

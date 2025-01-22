@@ -1,0 +1,64 @@
+Day 1 Quiz
+----------
+1. List some of the characteristics of Python.
+High-level (Declaratively styled)
+Logical commands in English rather than computer language
+"Simpler" DX but in no way undermines what it is capable of
+Cross-platform
+Object-Oriented
+Free to use, TONS of open-source modules and libraries
+Type system - dynamically-typed (takes its variable type from the expression assigned)
+Interpreted - download newest version, LTS release, of interpreter
+Monty Python NOT SNAKES!!
+
+2. The Python interpreter can be executed in two ways. What are they?
+command line (Python REPL)
+scripts (script mode)
+
+3. How should variables and functions be named in Python?
+snake_case (NOT CamelCase)
+not starting with reserved words, numbers, special characters
+no "new" keyword!!
+descriptive/meaningful way
+
+4. What does a variable contain/reference, and how should it (almost) always be declared?
+talk to your builder!
+data on RHS, can be of different types (strings, numbers, containers etc)
+declared and assigned at the same time
+
+5. Describe each part of the following statement:
+
+x = 12
+
+x is variable (operand) named
+= is assignment operator
+12 is data type (operand) integer, or integer literal
+
+6. List 5 of the fundamental data types.
+tuple
+set
+dict
+bool
+str
+
+int
+float
+complex
+None
+
+7. How does one read from a list element?
+print(my_list[0])
+
+8. Name TWO falsey values (values that will convert to False when passed to a bool() wrapper function):
+0
+""
+
+None
+any EMPTY container(list, set, tuple, dict)
+
+9. What value does the number 1 become when passed to a float() wrapper function?
+1.0
+
+10. What value does the string value "Hello" become when passed to a bool() wrapper function?
+True (and so does "False"!)
+
