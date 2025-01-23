@@ -1,0 +1,69 @@
+Day 2 Quiz
+----------
+
+1. What is a for loop best suited to do?
+Iterating through lists and other containers which have a length prop:
+The number of iterations is known in advance.
+In a Python for loop the stop condition is not exposed
+
+2. What is a while loop best suited for?
+For Iterating
+    using a counter
+    or when the number of iterations is NOT known in advance
+
+3. When will an optional else clause after a loop run? (any loop, for or while)
+Loop must have run to completion.
+
+4. In a function definition, what syntax denotes 
+the block of code that is the body of the function?
+:
+indentation
+
+5. What is the keyword required to exit from this loop:
+
+while True:
+    # some code
+    break
+
+break # won't work, outside loop
+
+alternately, you could have a separate loop control variable
+more = True
+while more:
+    # some code
+    more = False
+more suited if there are several ways of getting out of the loop 
+and any one of them can set more to False
+
+6. Differentiate between a module and a script, in broad terms only.
+A module may contain functions and classes
+It can be imported into a script 
+and the functions and classes may be called from the script
+Modules de-couple runtime code 
+so we may use the functions and classes as we see function
+and re-use them in other scripts
+without duplicating code
+
+7. If a function has a return statement, can any code come after that line?
+No (in the same block)
+
+def ask_my_name():
+    name = input("What's your name?)
+    if len(name):
+        return name
+    return None
+
+8. If a function has input, what is this called at function definition time?
+parameters
+
+9. If a function has input, what is this called at runtime?
+arguments
+
+10. What, if anything, do we know in Python from a function definition, 
+about the datatypes of the parameters to a function 
+(without any custom validation code)?
+NOTHING
+types are set by the data itself
+
+def ask_my_name_and_age(name, age):
+    pass

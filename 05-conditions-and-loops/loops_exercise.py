@@ -19,3 +19,22 @@
 # message, e.g. too low or too high.
 # 6. If the loop exits normally, the user has not guessed correctly so print a suitable
 # consolation message to the console.
+
+import random
+magic_number = random.randint(1,10)
+print(magic_number)#testing win
+num_guess = 0
+while num_guess < 3:
+    num_guess += 1#important!
+    user_guess = int(input("guess the number 1-10"))
+    if user_guess == magic_number:
+        print(f"{user_guess} You guessed it!")
+        break
+    elif user_guess > magic_number:
+        print("too high!")
+    elif user_guess < magic_number:
+        print("too low!")
+else:#way 1
+    print("no more guesses left")
+# if num_guess == 3:#way 2
+#     print("no more guesses left")
