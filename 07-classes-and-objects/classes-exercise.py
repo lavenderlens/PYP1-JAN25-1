@@ -38,3 +38,25 @@
 
 # time permitting, move your procedural testing code to a separate script and import TrainingCourse from a module
 # NOTE: in order for this eaxmple to work you DO NOT need to implement __str__
+# NOTE: the code you will write should take up less lines than this spec!
+
+class TrainingCourse:
+    def __init__(self, title, duration, price_per_person):
+        self.title = title
+        self.duration = duration
+        self.price_per_person = price_per_person
+        self.delegates = []
+
+    def add_delegates(self, delegate_name: str) -> None:
+        self.delegates.append(delegate_name)
+
+    def get_total_revenue(self) -> float:
+        return self.price_per_person * len(self.delegates)
+
+if __name__ == "__main__":
+    python1 = TrainingCourse("Python 1", 4, 2_000)
+    python1.add_delegates("Akheela")
+    python1.add_delegates("Edwin")
+    python1.add_delegates("Euan")
+    print(python1.get_total_revenue())#expected: 6000
+    

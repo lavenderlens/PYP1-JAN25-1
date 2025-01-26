@@ -1,0 +1,100 @@
+Day 3 Quiz
+
+----------
+ 
+1. Which function is pure, a or b?
+b - a has no input, but it does depend on thingb has input parameter which passes in a COPY of thing
+the binding to thing is broken at that point
+ 
+thing = 1
+
+def a():
+
+    print(thing)
+ 
+def b(thing):
+
+    print(thing)
+ 
+2. Which of the two functions below has a closure? Note that both functions compile and run.
+a 
+
+
+def outer_a():
+
+    lst = []
+
+    def add_to_lst(item):
+
+        nonlocal lst
+
+        lst.append(item)
+
+        return lst
+
+    return add_to_lst
+ 
+lst = []
+
+def outer_b():
+
+    def add_to_lst(item):
+
+        global lst
+
+        lst.append(item)
+
+        return lst
+
+    return add_to_lst
+ 
+3. How does one access the attributes and methods of an object?
+dot notation
+ 
+4. Class names should be in what style?
+CamelCase
+ 
+5. Which dunder method is called (indirectly) when you FIRST create an object of a class?
+__init__
+ 
+6. The first param. of each method in a class is conventionally named self. To what does this param. refer?
+the class itself: instantiated as the current object (instance of the class) under construction
+ 
+7. How many objects are created in the following 2 LOC?
+only 1 in both lines
+second one is copying a reference
+
+class_a = ClassA() 
+
+class_b = class_a
+ 
+8. Which dunder method should we override in our own custom classes 
+
+to obtain a meaningful representation of our objects' properties, 
+
+once we have made the object?
+
+__str__
+ 
+9. Write a *list slice* to return a new list with every other (even) number from the following list:
+
+nums = [1,2,3,4,5,6,7,8,9]
+
+print(even_nums := nums[1::2])
+OR
+print(even_nums := nums[1:9:2])
+
+10. Using *list comprehension*, return a list from the same list, nums, with just the numbers 5 or less
+
+small_nums = [num for num in nums if num < 5] # a different condition (Predicate) substituted
+ like a for loop on one line, with a filter passed in
+ filter: FP term, applies atest to every element in a list (or tuple),
+ returns only those that pass the test and writes them to a NEW list
+ IMMUTABLE method
+ similar: map, takes EVERY element of a list (or tuple) and applies a transformation
+ returns ALL the transformed elements as a new list
+ in both cases, the original list is unaffected
+
+ 
+Gentlemen we have an outage in Donegal. Currently booting backup PC. Teams will resume shortly.
+ 
