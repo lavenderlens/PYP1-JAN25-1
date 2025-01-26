@@ -6,7 +6,7 @@
 
 The course was disrupted on Friday 24th January during Storm Eowyn.
 
-Here is the code to date, including the session on backup battery and UPS.
+Here is the code to date, including the session delivered on backup battery and UPS.
 
 The rest of the content will be covered at a date to be arranged which is mutually convenient, therefore I have ***NOT uploaded*** anything else here, in order not to "jump the gun".
 
