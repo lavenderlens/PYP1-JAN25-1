@@ -14,7 +14,9 @@ In preparation for resuming the delivery, it might be good idea to read ahead in
 
 - 08-12 Containers (in brief, already covered)
 
-- 13 Modules
+- 13 Modules (in brief, already covered)
+
+- 14 Pattern matching
 
 - 15 Exception handling
 
