@@ -20,7 +20,7 @@ In preparation for resuming the delivery, it might be good idea to read ahead in
 
 - 15 Exception handling
 
-- 16 File handling
+- 16 File handling (in brief, already covered)
 
 - 17 Databases 
 
